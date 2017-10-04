@@ -1,15 +1,15 @@
 require('./check-versions')()
 
-var config = require('../config')
+var config = require('../config') //配置文件
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
 var opn = require('opn')
-var path = require('path')
-var express = require('express')
-var webpack = require('webpack')
-var proxyMiddleware = require('http-proxy-middleware')
+var path = require('path') //node.js API 获取文档路径
+var express = require('express') //node.js框架 用来启动webserver
+var webpack = require('webpack') //编译工具
+var proxyMiddleware = require('http-proxy-middleware')//代理
 var webpackConfig = require('./webpack.dev.conf')
 
 // default port where dev server listens for incoming traffic
