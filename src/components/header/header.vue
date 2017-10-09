@@ -115,7 +115,7 @@
                     .brand
                         display : inline-block
                         vertical-align: top
-                        width : 30px
+                        width : 36px
                         height : 18px
                         bg-image('brand')
                         background-size: 30px 18px
