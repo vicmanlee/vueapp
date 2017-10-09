@@ -22,6 +22,7 @@ export default {
     }
   },
   data () {
+    
     return {
       goods: []
     };
@@ -39,10 +40,6 @@ export default {
 };
 </script>
 <style lang="stylus">
-<<<<<<< HEAD
-  //1
-=======
->>>>>>> df87a194cd254c321d10ede8d2251863412bb00a
   @import "../../common/stylus/mixin";
   .goods
     display flex
