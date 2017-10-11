@@ -7,7 +7,7 @@
             <div class="content">
                 <div class="title">
                     <span class="brand"></span>
-                    <span class="name">{{seller.name}}</span>
+                    <span class="name" :title="seller.name">{{seller.name}}</span>
                 </div>
                 <div class="description">
                     {{seller.description}}/{{seller.deliveryTime}}分钟送达
@@ -125,6 +125,11 @@
                         font-size : 16px
                         line-height: 18px
                         font-weight: bold
+                        width 200px
+                        height 18px
+                        overflow hidden
+                        text-overflow ellipsis
+                        white-space nowrap                        
                 .description
                     margin-bottom: 10px
                     line-height : 12px
